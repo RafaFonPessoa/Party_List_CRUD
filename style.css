@@ -1,0 +1,49 @@
+#list_body {
+    background-color: #8849FF;
+    width: 600px;
+    height: 600px;
+    border-radius: 5%;
+    margin-top: 20px;
+    margin: auto;
+    box-shadow: 5px 5px 20px black;
+    ;
+}
+
+h1 {
+    text-shadow: 5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: cursive;
+}
+
+p {
+    text-shadow: 5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#list_body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#list_body li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+#list_body li:hover {
+    background-color: #22269E;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+#buttons {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    box-shadow: 5px 5px 5px black;
+    font-family: 'Courier New', Courier, monospace;
+}

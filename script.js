@@ -5,10 +5,25 @@ function showList()
     {
         if(this.readyState == 4 && this.status == 200)  
         {
-            document.getElementById("itens").innerHTML = this.responseText;
+            document.getElementById("list_body").innerHTML = this.responseText;
         }
     };
 
-    xhttp.open("GET", "showList.php", true);
+    xhttp.open("GET", "show_list.php", true);
+    xhttp.send();
+}
+
+function clearList()
+{
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() 
+    {
+        if (this.readyState == 4 && this.status == 200) 
+        {
+            showList();
+        }
+    };
+    xhttp.open("POST", "clear_list.php", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send();
 }
